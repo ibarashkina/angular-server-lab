@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import {Api} from '../services/api.service';
 // import {HttpClient} from '@angular/common/http';
 
@@ -24,9 +24,9 @@ export class CartServiceComponent {
   items;
   constructor( private api: Api){}
 
-  getCartItems = () => {
+
+  getItems = () => {
     this.api.getAllItems().subscribe((data:ApiData) => this.items = data.data);
-
   }
-
 }
+

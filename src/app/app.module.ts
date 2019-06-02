@@ -8,9 +8,9 @@ import {Api} from './services/api.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
-// const appRoutes: Routes = [
-//   {path: 'cart-items', component: CartServiceComponent },
-// ];
+const appRoutes: Routes = [
+  {path: 'cart-items', component: CartServiceComponent },
+];
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    // RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [Api],
   bootstrap: [AppComponent]
