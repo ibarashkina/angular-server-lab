@@ -1,18 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CartServiceComponent } from './CartService/cartService.component';
+import {Api} from './services/api.service';
+import { HttpClientModule } from '@angular/common/http';
+
+
+// const appRoutes: Routes = [
+//   {path: 'cart-items', component: CartServiceComponent },
+// ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CartServiceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    // RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [Api],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
