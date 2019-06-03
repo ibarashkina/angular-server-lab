@@ -9,6 +9,6 @@ export class Api {
     constructor(private http: HttpClient) {
     }
 
-getAllItems = () => this.http.get('http://localhost:8890');
+getAllItems = () => this.http.get('http://localhost:8890/cart-items');
 
 }
