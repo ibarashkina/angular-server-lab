@@ -15,7 +15,7 @@ interface ApiData {
 
 
 @Component({
-  selector: 'cartService',
+  selector: 'cart-service',
   templateUrl: '../CartService/cartService.component.html',
   styleUrls: ['../CartService/cartService.component.css']
 })
